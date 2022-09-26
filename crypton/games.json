@@ -2,11 +2,11 @@
   "games": {
     "2GameId": {
       "Name": "FOO",
-      "script": "raw.bar.net/scriptforFOO.lua"
+      "script": "https://raw.bar.net/scriptforFOO.lua"
     },
     "1GameId": {
       "Name": "FO",
-      "script": "raw.bar.net/scriptforFO.lua"
+      "script": "https://raw.bar.net/scriptforFO.lua"
     }
   }
 }
