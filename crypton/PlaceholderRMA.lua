@@ -1,0 +1,1 @@
+print("rate my avatar")
