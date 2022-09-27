@@ -1,1 +1,14 @@
-{ "games": { "6708206173": { "Name": "Rate My Avatar", "script": "https://github.com/404CrypticNotFound/somescripts/raw/main/crypton/PlaceholderRMA.lua", "patched": false }, "8351248417": { "Name": "The Booth Plaza", "script": "https://github.com/404CrypticNotFound/somescripts/raw/main/crypton/PlaceholderTBP.lua", "patched": false } } }
+{
+  "games": {
+    "6708206173": {
+      "Name": "Rate My Avatar",
+      "script": "https://github.com/404CrypticNotFound/somescripts/raw/main/crypton/PlaceholderRMA.lua",
+      "patched": false
+    },
+    "8351248417": {
+      "Name": "The Booth Plaza",
+      "script": "https://github.com/404CrypticNotFound/somescripts/raw/main/crypton/PlaceholderTBP.lua",
+      "patched": false
+    }
+  }
+}
