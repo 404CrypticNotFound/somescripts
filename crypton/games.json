@@ -1,13 +1,13 @@
 {
   "games": {
-    "2GameId": {
-      "Name": "FOO",
-      "script": "https://raw.bar.net/scriptforFOO.lua",
+    "6708206173": {
+      "Name": "Rate My Avatar",
+      "script": "https://github.com/404CrypticNotFound/somescripts/raw/main/crypton/PlaceholderRMA.lua",
       "patched": false
     },
-    "1GameId": {
-      "Name": "FO",
-      "script": "https://raw.bar.net/scriptforFO.lua",
+    "8351248417": {
+      "Name": "The Booth Plaza",
+      "script": "https://github.com/404CrypticNotFound/somescripts/raw/main/crypton/PlaceholderTBP.lua",
       "patched": false
     }
   }
