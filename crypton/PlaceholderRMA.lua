@@ -1,1 +1,1 @@
-print("rate my avatar")
+print("Rate My Avatar")
