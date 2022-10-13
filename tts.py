@@ -1,3 +1,4 @@
+# Python 3 server example
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pygame import mixer, _sdl2 as devices
 import time
@@ -18,14 +19,23 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header("Content-type", "application/json")
         self.end_headers()
         self.wfile.write(bytes(json.dumps({'received': 'ok'}), "utf-8"))
+        print("lalalalala")
         num = str(random.randrange(1,1000000))
+        print(num)
         query = urllib.parse.urlparse(self.path).query
+        print("1")
         query_components = dict(qc.split("=") for qc in query.split("&"))
-        engine.save_to_file(query_components["text"].replace('%20', ' '), num + '.wav')
+        print("2")
+        if "%20" in query_components["text"]:
+            engine.save_to_file(query_components["text"].replace('%20', ' '), "C:/Users/splat/Desktop/scripts/"+num + '.wav')
+        elif "+" in query_components['text']:
+            engine.save_to_file(query_components["text"].replace('+', ' '), "C:/Users/splat/Desktop/scripts/"+num + '.wav')
+        else:
+            engine.save_to_file(query_components["text"].replace('%20', ' '), "C:/Users/splat/Desktop/scripts/"+num + '.wav')
         print(self.path.replace('%20', ' ')[1:])
         engine.runAndWait()
         mixer.init(devicename = "CABLE Input (VB-Audio Virtual Cable)")
-        mixer.music.load(num + ".wav")
+        mixer.music.load("C:/Users/splat/Desktop/scripts/" + num + ".wav")
         mixer.music.play()
         a = mixer.Sound(num + ".wav")
         time.sleep(a.get_length())
