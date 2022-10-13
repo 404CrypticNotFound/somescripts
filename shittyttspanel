@@ -1,0 +1,13 @@
+<html><head></head><body style="background-color:DarkSlateGrey;">
+    <header><marquee><b>Turdbot TTS Control</b></marquee></header><hr>
+
+    
+    <form action="http://127.0.0.1:8080/" method="GET" target="sub">
+        <label for="name">Message</label>
+        <input type="text" id="text" name="text"> <br>
+        <input type="submit" value="Say">
+    </form>
+    <iframe id="subframe" name="sub">
+
+    </iframe>
+</body></html>
